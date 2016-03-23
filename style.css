@@ -1,13 +1,133 @@
-li { list-style-type: square }
-#cena { color: red; font-weight: bold }
-/* selektor z identyfikatorem */
-.wstęp { font-style: italic }
-td img { border-color: blue; border-style: solid }
-/* znaczniki zagnieżdżone */
-td img:hover { border-color: red; border-style: solid } /* selektor z pseudo-atrybutem */
-h1 + h2 { letter-spacing: 5px }
-td[colspan="2"] > p { font-size: small }
-p + p { color: gray }
-h1 { color: blue }
-h1 { color: green }
-body { background-image: url(books.png); background-repeat: repeat-y }
+* {
+  box-sizing: border-box; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  font-size: 16px; }
+
+.row:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.section {
+  float: left;
+  margin: 20px;
+  padding: 0px;
+  width: 350px;
+  height: 200px;
+  background-color: #33b5e5;
+  color: #ffffff; }
+  .section .title {
+    margin: 10px;
+    font-size: 24px; }
+  .section p {
+    margin: 10px; }
+
+html {
+  font-family: "Lucida Sans", sans-serif; }
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; }
+
+.menu li {
+  float: left;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+.menu li:hover {
+  background-color: #111; }
+
+.header {
+  font-size: 32px; }
+  .header img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    margin-right: 10px; }
+  .header div {
+    display: inline-block;
+    width: 200px; }
+
+footer {
+  background-color: #9933cc;
+  bottom: 0;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  align-items: center;
+  color: white; }
+  footer .name {
+    font-weight: bold; }
+
+/* Mobile */
+@media only screen and (max-width: 599px) {
+  footer {
+    position: relative; }
+
+  .htitle {
+    visibility: hidden; }
+
+  .bigmenu {
+    visibility: hidden; } }
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  footer {
+    position: relative; }
+
+  .bigmenu {
+    visibility: hidden; } }
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  footer {
+    position: fixed; }
+
+  .smallmenu {
+    visibility: hidden; } }
+
+/*# sourceMappingURL=style.css.map */
