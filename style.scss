@@ -38,8 +38,8 @@ $font_size: 16px;
   float:left;
   margin: 20px;
   padding: 0px;
-  width: 350px;
-  height: 200px;
+  //width: 350px;
+  height: 250px;
   background-color :#33b5e5;
   color: #ffffff;
   .title{
@@ -119,6 +119,9 @@ footer {
   .bigmenu{
     visibility: hidden;
   }
+  .section{
+    width:90%;
+  }
 }
 /* Tablet */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
@@ -128,6 +131,12 @@ footer {
   .bigmenu{
     visibility: hidden;
   }
+  .bigone{
+    width: 90%;
+  }
+  .smallone{
+    width: 42%;
+  }
 }
 /* Desktop */
 @media only screen and (min-width: 1024px) {
@@ -136,5 +145,8 @@ footer {
   }
   .smallmenu{
     visibility: hidden;
+  }
+  .section{
+    width:29%;
   }
 }

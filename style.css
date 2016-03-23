@@ -51,8 +51,7 @@
   float: left;
   margin: 20px;
   padding: 0px;
-  width: 350px;
-  height: 200px;
+  height: 250px;
   background-color: #33b5e5;
   color: #ffffff; }
   .section .title {
@@ -114,20 +113,32 @@ footer {
     visibility: hidden; }
 
   .bigmenu {
-    visibility: hidden; } }
+    visibility: hidden; }
+
+  .section {
+    width: 90%; } }
 /* Tablet */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
   footer {
     position: relative; }
 
   .bigmenu {
-    visibility: hidden; } }
+    visibility: hidden; }
+
+  .bigone {
+    width: 90%; }
+
+  .smallone {
+    width: 42%; } }
 /* Desktop */
 @media only screen and (min-width: 1024px) {
   footer {
     position: fixed; }
 
   .smallmenu {
-    visibility: hidden; } }
+    visibility: hidden; }
+
+  .section {
+    width: 29%; } }
 
 /*# sourceMappingURL=style.css.map */
